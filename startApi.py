@@ -56,7 +56,7 @@ def verify_captcha():
     if user_input == captcha_text:
 
         previous_captcha_time = None
-
+        #getting all the data
         mycurr.execute("SELECT * from captchas")
         list1 = mycurr.fetchall()
 
